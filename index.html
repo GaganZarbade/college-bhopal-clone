@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+	<style type="text/css">
+    *
+    {
+      font-family: corbel;
+    }
+    body
+    {
+      background: #e6ffff;
+    }
+		.n1
+		{
+			border: 1px solid black;
+			width: 100%;
+			height: auto;
+		}
+		#f123
+		{
+			margin-left: 60px;
+      margin-top: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 25px;
+			width: auto;
+			height: auto;
+      color: white;
+		}
+    #f123:hover
+    {
+      font-weight: bolder;
+      color: orange;
+      border-top: 2px solid orange;
+      border-bottom: 2px solid orange;
+      border-radius: 10px;
+    }
+    #btn1
+    {
+       width:200px;
+       height: 50px;
+       font-weight: bold;
+       font-size: 20px;
+       border-radius: 20px;
+    }
+    #btn1:hover
+    {
+      color: #ffad33;
+      background: rgb(0, 0, 102);
+      border: 3px solid #ffad33;
+    }
+    .t
+    {
+      font-weight: bolder;
+    }
+    #img
+    {
+      width: 150px;
+      height: 50px;
+    }
+    #video
+    {
+      width: 100%;
+      height: 100%;
+    }
+    .q
+    {
+      position: absolute;
+      left: 100px;
+      bottom: 280px;
+      font-weight: bolder;
+      font-size: 50px;
+      color: white;
+      opacity: 0.6;
+    }
+    .q:hover
+    {
+      opacity: 1.5;
+    }
+    .b
+    {
+      position: absolute;
+      left: 550px;
+      bottom: 200px;
+      width: 250px;
+      height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50px;
+      opacity: 0.6;
+    }
+    .b:hover{
+      opacity: 1.0;
+      color: #ffad33;
+      background: rgb(0, 0, 102);
+      font-weight: bold;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    .o
+    {
+      padding-top: 5%;
+      background: #ffffff;
+      width: 100%;
+      height: auto;
+    }
+    .o1
+    {
+      font-size: 50px;
+      font-weight: bolder;
+      padding-left: 40%;
+      color: rgb(0, 0, 102);
+    }
+    .o2
+    {
+      font-size: 25px;
+      font-weight:inherit;
+      margin-left: 20%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      width: 61%;
+      height: auto;
+    }
+    .p
+    {
+      border: 1px solid black;
+      padding-top: 3px;
+    }
+    .dm
+    {
+        border: 2px solid white;
+    }
+    .dm:hover
+    {
+        border-top-left-radius: 50px solid red;
+        border-top: red;
+        border-left: red;
+    }
+    .f
+    {
+      font-size: 30px ;
+      margin-left: 50px;
+      font-weight: bold;
+      text-align: left;
+      color: rgb(0, 0, 102);
+    }
+    .f:hover
+    {
+      color: orange;
+      cursor: pointer;
+    }
+    .f1
+    {
+      font-size: 20px;
+    }
+    .dc
+    {
+      margin-top: 5%;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .about
+    {
+      width: 100%;
+      height: 1300px;
+      margin-top: 100px;
+      background: #ffffff;
+    }
+    .im1
+    {
+      position: absolute;
+      left: 80%;
+      bottom: -240%;
+    }
+    .im2
+    {
+      position: absolute;
+      left: 60%;
+      bottom: -270%;
+    }
+    .im3
+    {
+      position: absolute;
+      left: 50%;
+      bottom: -280%;
+    }
+    .im4
+    {
+      position: absolute;
+      left: 13%;
+      bottom: -375%;
+    }
+    .im5
+    {
+      position: absolute;
+      left: 6%;
+      bottom: -385%;
+    }
+    .im6
+    {
+      position: absolute;
+      left: 35%;
+      bottom: -318%;
+    }
+    ul 
+    {
+      list-style: none;
+    }
+
+    ul li::before
+    {
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    .clr
+    {
+      color: skyblue;
+      margin-left: 40px;
+    }
+    .im7
+    {
+      width: 100%;
+      height: 800px;
+      opacity: 0.8;
+    }
+    .im7:hover
+    {
+      opacity: 1.0;
+    }
+    .mainimg
+    {
+      margin-top: 80px;
+    }
+    .t1
+    {
+      position: relative;
+      bottom: 740px;
+      width: 100%;
+      height: auto;
+    }
+    .t11
+    {
+      text-align: center;
+      font-size: 80px;
+      font-weight: bold;
+      color: white;
+    }
+    .t111
+    {
+      font-size: 30px;
+      color: white;
+    }
+    .t2
+    {
+      position: relative;
+      bottom: 600px;
+      width: 80%;
+      height: auto;
+      text-align: center;
+      margin-left: 15%;
+    }
+    .v2
+    {
+      width: 60%;
+      height: auto;
+    }
+    .im23
+    {
+      width: 200px;
+      height: 60px;
+    }
+    .t3
+    {
+       position: relative;
+       width: 100%;
+       height: 120px;
+       bottom: 300px;
+       background: aquamarine;
+    }
+    .t4
+    {
+      position: relative;
+      bottom: 200px;
+      width: 90%;
+      margin-left: 100px;
+      height: 400px;
+    }
+    
+    .lif li
+    {
+      text-decoration: none;
+    }
+    .foot
+    {
+      position: relative;
+      bottom: 100px;
+      padding: 20px;
+      background: rgb(0, 0, 102);
+      color: #ffad33;
+    }
+    .a1
+    {
+      color: white;
+    }
+    .a1.a2:hover
+    {
+      color: blue;
+    }
+    .a1.a3:hover
+    {
+      color: red;
+    }
+  </style>
+  <script type="text/javascript">
+    function change1()
+    {
+      document.getElementById("good").innerHTML="An Investment in knowledge pays the Best Interest";
+    }
+    function change2()
+    {
+      document.getElementById("good").innerHTML="An Investment in knowledge pays the Good Interest";
+    }
+    function change3()
+    {
+      document.getElementById("os").innerHTML="Our Best Services";
+    }
+    function change4()
+    {
+      document.getElementById("os").innerHTML="Our Services";
+    }
+  </script>
+</head>
+<body>
+
+<nav class="navbar bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img style="padding-left: 20px;" id="img" src="http://collegebhopal.com/wp-content/uploads/2022/08/College-Bhopal-Logo.png"></a>
+      <div class="navbar navbar-expand-lg">
+        <a class="nav-link active " id="f123" aria-current="page" href="#">Home</a>&nbsp&nbsp&nbsp
+        <a class="nav-link " id="f123" href="#about">About</a>&nbsp&nbsp&nbsp
+      </div>
+    <form class="d-flex" role="search">
+      <button class="btn btn-light" id="btn1" type="submit">Get a free Quote</button>
+    </form>
+  </div>
+</nav>
+<div>
+    <video id="video" playsinline autoplay muted loop>
+           <source src="coder1.mp4" type="video/mp4">
+    </video>
+    <div class="q" id="good" onmouseover="change1()"  onmouseout="change2()">
+      <font>An Investment in knowledge pays the Good Interest</font>
+    </div>
+    <div>
+      <a href="contact.html"><button class="btn btn-outline-light b"> Enquiry Now</button></a>
+    </div>
+</div>
+
+
+
+
+<div class="o">
+  <font class="o1" id="os" onmouseover="change3()" onmouseout="change4()">Our Services</font>
+  <div class="o2"><p>Keeping in the mind of the needs of the students we here provide the real placement scenario in the industry with the upcoming modifications in the policies which may lead to the effects in the jobs, sustainability, growth prospects etc.</p></div>
+</div>
+<div class="container text-center dc">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-features-1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title f" style="margin-left: 75px;">Career <br>Counselling</h3>
+                    <p class="card-text f1">We provide the best guidance to the students related to education and qualification.</p>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info">Read More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-features-3.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title f" style="margin-left: 100px;">Certification Courses</h5>
+                    <p class="card-text f1">We know the patterns of the industry requirements & we are closely associated to big IT giants.</p>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info">Read More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-features-2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title f">College / University Information</h5>
+                    <p class="card-text f1">We provide the details related to the courses offered like Fees, Govt. Schemes and loan at various Colleges and Universities.</p>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info">Read More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+          <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-features-4.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title f" style="margin-left: 75px;">Educational Consultation</h5>
+                    <p class="card-text f1">We provide the consultation to the Institutions to add or remove any course, syllabus or modification required in their pedagogy.</p>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info">Read More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="about">
+  <div class="container text-center">
+      <div class="row g-2" id="about">
+          <div class="col-6" style="padding-top: 120px;">
+                <div >
+                    <div class="card" style="width: 32rem;">
+                            <div class="card-body">
+                                    <h1 class="card-title"  style="color:rgb(0, 0, 102);font-weight: bold;">About</h1>
+                                    <h2 class="card-title" style="color:rgb(0, 0, 102);font-weight: bold;">College Bhopal</h2>
+                                    <p class="card-text f1">As it is an initiative from Cybrom Technology Private Limited where we have been providing the training of various vocational courses with placement assistance till date more than 6000+ happy and placed students since 2007. We know the patterns of the industry requirements and we are closely associated to big IT giants and Industries thus what they are seeking in any candidate is best known to us.</p>
+                            <a href="#" class="btn btn-outline-info">Learn More</a>
+                            </div>
+                    </div>
+                </div>
+          </div>
+          <div class="col-6" style="padding-top: 120px;">
+              <div>
+                <img class="im2" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-1.webp">
+                <img class="im1" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-3.webp">
+                <img class="im3" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-2.webp">
+
+              </div>
+          </div>
+
+          <div class="col-6" style="padding-top: 120px;">
+              <div>
+                <img class="im4" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-4.webp">
+                <img class="im6" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-6.webp">
+                <img class="im5" src="http://collegebhopal.com/wp-content/uploads/2022/08/fintech-feature-5.webp">
+
+              </div>
+          </div>
+          <div class="col-6" style="padding-top: 120px;">
+                <div>
+                    <div class="card" style="width: 32rem;">
+                            <div class="card-body">
+                                    <h1 class="card-title" style="color:rgb(0, 0, 102);font-weight: bold;">Our USP's</h1>
+                                    <h2 class="card-title" style="color:rgb(0, 0, 102);font-weight: bold;">College Bhopal</h2>
+                                    <p class="card-text f1">The team of experienced professionals handle each case with their customized requirements and provide the apt solution to them. This makes our clients happy.
+                                      <table style="margin-left: 80px; width: 350px;height: 250px;font-size:20px ;">
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>Connections</td>
+                                        </tr>
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>Counselling</td>
+                                        </tr>
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>Guidance</td>
+                                        </tr>
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>In-house Counselling</td>
+                                        </tr>
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>Presence</td>
+                                        </tr>
+                                        <tr>
+                                          <td><i class="fa-solid fa-circle clr"></i></td>
+                                          <td>Process</td>
+                                        </tr>
+                                      </table>
+                                    </p>
+                            <a href="#" class="btn btn-outline-info">Learn More</a>
+                            </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="mainimg">
+  <img class="im7" src="world.jpg">
+  <table class="t1">
+    <tr>
+      <td class="t11">150<sup style="color: orange;">+</sup></font><font class="t111">Trusted Clients</font></td>
+      <td class="t11">15<sup style="color: orange;">+</sup></font><font class="t111">Project completed</font></td>
+      <td class="t11">12<sup style="color: orange;">+</sup></font><font class="t111">MoU's (Colleges/Universities)</font></td>
+    </tr>
+  </table>
+  <table class="t2">
+    <tr>
+      <td>
+        <div class="card text-center">
+              <div class="card-body w-100 h-100">
+                  <h1 class="card-title">Get a Free Consultation</h1>
+                  <p class="card-text" style="font-size: 20px;">Reach us for any enquiry related to education and career</p>
+                  <a href="contact.html" class="btn btn-primary" >Contact us</a>
+              </div>
+        </div>
+      </td>
+      <td>
+        <video class="v2" controls playsinline  autoplay loop>
+          <source src="http://collegebhopal.com/wp-content/uploads/2022/08/Untitled.mp4" type="video/mp4">
+        </video>
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <table class="t3">
+    <tr>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-1.png"></td>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-2.png"></td>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-3.png"></td>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-4.png"></td>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-5.png"></td>
+      <td><img class="im23" src="http://collegebhopal.com/wp-content/uploads/2022/08/Fintech-logo-6.png"></td>
+    </tr>
+  </table>
+</div>
+<div>
+  <table  class="t4">
+    <tr>
+      <td colspan="2" style="text-align: center;"><h1 style="color:rgb(0, 0, 102);"><b>Testimonials</b></h1></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                    <div class="col-md-4">
+                          <img src="http://collegebhopal.com/wp-content/uploads/2022/08/testimonial-2.jpeg" class="img-fluid rounded-start" style="border-radius: 50px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                          <div class="card-body">
+                                <p class="card-text" style="font-size: 20px;">Quis autem vel eumue reprehende quinea voluptate velit esse quamncy molestiae conse quatur rem</p>
+                                <h2 class="card-title">Marlon L. Gordo</h2>
+                                <p class="card-text"><h5 class="text-muted">Web Designer</h5></p>
+                          </div>
+                    </div>
+              </div>
+          </div>
+      </td>
+      <td>
+        <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                    <div class="col-md-4">
+                          <img src="http://collegebhopal.com/wp-content/uploads/2022/08/testimonial-1.jpeg" class="img-fluid rounded-start" style="border-radius: 50px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                          <div class="card-body">
+                                <p class="card-text" style="font-size: 20px;">On the other handsc denounce with righteous indignation an dislikec men who are so beguileds the way.</p>
+                                <h2 class="card-title">Richard J. Reinhold</h2>
+                                <p class="card-text"><h5 class="text-muted">Bussiness Manager</h5></p>
+                          </div>
+                    </div>
+              </div>
+          </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="foot">
+  <div class="container text-center">
+  <div class="row row-cols-4">
+    <div class="col">
+        <h3 style="font-weight: bold;">About College Bhopal</h3>
+        <p style="font-size:20px">College Bhopal is an initiative by Cybrom Technology Private Limited, which is a leading Edutech company registered under the companies Act 1956 and is in the field of Vocational Training since 2007 in the field of Advance Computing Technologies.</p>
+    </div>
+    <div class="col">
+        <h3 style="font-weight: bold;">Services</h3>
+        <table style="margin-left: 35px;height: 200px;font-size: 20px;">
+          <tr>
+            <td>Career Counselling</td>
+          </tr>
+          <tr>
+            <td>Certification Courses</td>
+          </tr>
+          <tr>
+            <td>College/University</td>
+          </tr>
+          <tr>
+            <td>Educational Consultation</td>
+          </tr>
+        </table>
+    </div>
+    <div class="col">
+        <h3 style="font-weight: bold;">Company</h3>
+        <table style="margin-left: 85px;height: 200px;font-size: 20px;">
+          <tr>
+            <td>About</td>
+          </tr>
+          <tr>
+            <td>Services</td>
+          </tr>
+          <tr>
+            <td>USP</td>
+          </tr>
+          <tr>
+            <td>Contact</td>
+          </tr>
+        </table>
+    </div>
+    <div class="col">
+        <h3 style="font-weight: bold;">Contact Us</h3>
+        <table style="margin-left: 10px;height: 200px;font-size: 20px;">
+          <tr>
+            <td>185, MP Nagar Zone 1, Bhopal</td>
+          </tr>
+          <tr>
+            <td>info@collegebhopal.com</td>
+          </tr>
+          <tr>
+            <td>+91-8989734978</td>
+          </tr>
+          <tr>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> 
+              <a class="a1 a2" href="https://www.facebook.com/login/"> <i class="fa fa-facebook-official fa-2x"></i></a>
+              <a class="a1 a3" href="https://www.instagram.com/"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <hr>
+  <footer>© 2021 College Bhopal. All Rights Reserved.</footer>
+</div>
+</div>
+</body>
+</html>
